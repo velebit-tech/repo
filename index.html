@@ -15,10 +15,23 @@
     </head>
     <body>
 
-        <p>Whats's called 8 Velebits?</p>
-        <p id="target" style="visibility:hidden;">A Velebyte.</p>
-        <button type="button" onclick='f1()'>Show</button>
-        <button type="button" onclick='f2()'>Hide</button>
+        <p>JavaScript code:</p>
+        <p id="par">default</p>
+
+        <script>
+            var par = document.getElementById('par');
+            
+            var person = {
+                firstName: 'Mario',
+                lastName : 'Markovic',
+                age      : 22,
+                info     : function() {
+                    return this.firstName + ' ' + this.lastName + ', ' + this.age + '.';
+                }
+            }
+
+            par.innerHTML = 'Person info: ' + person.info();
+        </script>
 
     </body>
 </html>
