@@ -5,6 +5,13 @@ body{
     font-size: 30px;
 }
 
+#txt {
+    display: inline-block;
+    margin: 20px;
+    padding: 15px 20px;
+    background-color: rgb(149, 255, 149);
+}
+
 #par {
     margin: 20px;
     padding: 15px 20px;

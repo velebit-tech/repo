@@ -15,22 +15,14 @@
     </head>
     <body>
 
-        <p>JavaScript code:</p>
-        <p id="par">default</p>
+        <p id="txt">JavaScript code:</p>
+        <p id="par">default text</p>
 
         <script>
             var par = document.getElementById('par');
             
-            var person = {
-                firstName: 'Mario',
-                lastName : 'Markovic',
-                age      : 22,
-                info     : function() {
-                    return this.firstName + ' ' + this.lastName + ', ' + this.age + '.';
-                }
-            }
+            
 
-            par.innerHTML = 'Person info: ' + person.info();
         </script>
 
     </body>
