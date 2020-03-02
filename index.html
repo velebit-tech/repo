@@ -16,8 +16,8 @@
     <body>
 
         <p id="txt">JavaScript code:</p>
-        <p id="par">default text</p>
         <button type="button" onclick='myFunction()'>click me</button>
+        <p id="par">default text</p>
 
         <script>
             var par = document.getElementById('par');
@@ -51,11 +51,8 @@
                 var y = '#' + x.toString() + x.toString() + x.toString();
                 console.log(y);
                 par.style.backgroundColor = y;
+                par.innerHTML = "Color is " + y;
             }
-
-
-            
-
         </script>
 
     </body>
