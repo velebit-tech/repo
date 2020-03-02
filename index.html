@@ -1,59 +1,31 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Velebit Tech</title>
-        <link rel="icon" href="pics/vt.png">
+  <head>
+  <title>Velebit Tech</title>
+    <link rel="icon" href="pics/vt.png">
 
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <script src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js"></script>
 
-        <meta charset="UTF-8">
-        <meta name="description" content="Velebit tech web development">
-        <meta name="keywords" content="HTML, CSS, JavaScript">
-        <meta name="author" content="MM">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
+    <meta charset="UTF-8">
+    <meta name="description" content="Velebit tech web development">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="MM">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
 
-        <p id="txt">JavaScript code:</p>
-        <button type="button" onclick='myFunction()'>click me</button>
-        <p id="par">default text</p>
+    <p id="txt">JavaScript code:</p>
+    <p id="js_block">default text</p>
 
-        <script>
-            var par = document.getElementById('par');
-            var txt = '';
+    <script>
+      let js_block = document.getElementById('js_block');
 
-            
-            function myFunction() {
-                var x = Math.floor(Math.random() * 16);
-                console.log(x);
-                switch (x) {
-                    case 10:
-                        x = "A";
-                        break;
-                    case 11:
-                        x = "B";
-                        break;
-                    case 12:
-                        x = "C";
-                        break;
-                    case 13:
-                        x = "D";
-                        break;
-                    case 14:
-                        x = "E";
-                        break;
-                    case 15:
-                        x = "F";
-                        break;
-                }
-                console.log("New X: " + x);
-                var y = '#' + x.toString() + x.toString() + x.toString();
-                console.log(y);
-                par.style.backgroundColor = y;
-                par.innerHTML = "Color is " + y;
-            }
-        </script>
+      let x = 'mario';
+      js_block.innerHTML = x; 
 
-    </body>
+
+    </script>
+
+  </body>
 </html>

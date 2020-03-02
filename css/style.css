@@ -1,21 +1,21 @@
 body{
-    background: white;
-    margin: 0;
-    font-family: "Verdana";
-    font-size: 30px;
+  background: white;
+  margin: 0;
+  font-family: "Verdana";
+  font-size: 30px;
 }
 
 #txt {
-    display: inline-block;
-    margin: 20px;
-    padding: 15px 20px;
-    background-color: rgb(149, 255, 149);
+  display: inline-block;
+  margin: 20px;
+  padding: 15px 20px;
+  background-color: rgb(149, 255, 149);
 }
 
-#par {
-    margin: 20px;
-    padding: 15px 20px;
-    box-sizing: content-box;
-    background-color: rgb(212, 212, 212);
-    min-height: 300px;
+#js_block {
+  margin: 20px;
+  padding: 15px 20px;
+  box-sizing: content-box;
+  background-color: rgb(212, 212, 212);
+  min-height: 300px;
 }
