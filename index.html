@@ -17,16 +17,44 @@
 
         <p id="txt">JavaScript code:</p>
         <p id="par">default text</p>
+        <button type="button" onclick='myFunction()'>click me</button>
 
         <script>
             var par = document.getElementById('par');
             var txt = '';
 
             
-            let x = 10;
+            function myFunction() {
+                var x = Math.floor(Math.random() * 16);
+                console.log(x);
+                switch (x) {
+                    case 10:
+                        x = "A";
+                        break;
+                    case 11:
+                        x = "B";
+                        break;
+                    case 12:
+                        x = "C";
+                        break;
+                    case 13:
+                        x = "D";
+                        break;
+                    case 14:
+                        x = "E";
+                        break;
+                    case 15:
+                        x = "F";
+                        break;
+                }
+                console.log("New X: " + x);
+                var y = '#' + x.toString() + x.toString() + x.toString();
+                console.log(y);
+                par.style.backgroundColor = y;
+            }
 
 
-            par.innerHTML = x;
+            
 
         </script>
 
