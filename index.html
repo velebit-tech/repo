@@ -9,22 +9,55 @@
 
     <meta charset="UTF-8">
     <meta name="description" content="Velebit tech web development">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
     <meta name="author" content="MM">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
 
-    <p class="tutorial" id="txt">JavaScript code:</p>
-    <p class="tutorial" id="js_block">default text</p>
+    <p id="txt">JavaScript code:</p>
+    <button type="button" onclick='myFunction()'>Change color</button>
+    <p id="par">default text</p>
 
     <script>
-      let js_block = document.getElementById('js_block');
-
-      // js_block.innerHTML = document.baseURI + '<br>' + document.URL;
-      //console.log(document.cookie);
-
+      var par = document.getElementById('par');
+      var txt = '';
+  
+      function myFunction() {
+        var x = Math.floor(Math.random() * 16);
+        console.log(x);
+        switch (x) {
+          case 10:
+            x = "A";
+            break;
+          case 11:
+            x = "B";
+            break;
+          case 12:
+            x = "C";
+            break;
+          case 13:
+            x = "D";
+            break;
+          case 14:
+            x = "E";
+            break;
+          case 15:
+            x = "F";
+            break;
+        }
+        console.log("New X: " + x);
+        var y = '#' + x.toString() + x.toString() + x.toString();
+        console.log(y);
+        par.style.backgroundColor = y;
+        if (x < 5) {
+          par.style.color = "#FFF";
+        } else {
+          par.style.color = "#000";
+        }
+        par.innerHTML = "Color is " + y;
+        }
     </script>
 
-  </body>
+</body>
 </html>
